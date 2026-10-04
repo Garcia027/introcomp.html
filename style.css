@@ -1,0 +1,579 @@
+/* ================================
+   GENERAL STYLES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    color: #17221f;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    background-color: #10201c;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #42d392;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #42d392;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 550px;
+
+    background-color: #10201c;
+    color: white;
+
+    padding: 80px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.small-title,
+.section-label {
+    color: #42d392;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 550px;
+    color: #c5d2ce;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    background-color: #42d392;
+    color: #10201c;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 6px;
+}
+
+.hero-button:hover {
+    background-color: white;
+}
+
+
+/* ================================
+   HERO CARD
+================================ */
+
+.hero-card {
+    width: 330px;
+
+    background-color: #19332d;
+    border: 1px solid #2c5147;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 12px;
+}
+
+.computer-icon {
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.hero-card h3 {
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    margin-bottom: 25px;
+}
+
+.status {
+    background-color: #10201c;
+    padding: 10px;
+
+    font-size: 12px;
+    color: #42d392;
+}
+
+
+/* ================================
+   GENERAL SECTIONS
+================================ */
+
+.section {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+.section h2,
+.process-section h2,
+.form-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #66736f;
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   SERVICES TABLE
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+
+    background-color: white;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+th {
+    background-color: #10201c;
+    color: white;
+
+    text-align: left;
+
+    padding: 17px;
+}
+
+td {
+    padding: 17px;
+
+    border-bottom: 1px solid #e1e8e5;
+}
+
+tr:hover {
+    background-color: #f1f8f5;
+}
+
+td:last-child {
+    color: #15945d;
+    font-weight: bold;
+}
+
+
+/* ================================
+   PROCESS SECTION
+================================ */
+
+.process-section {
+    padding: 80px 8%;
+    background-color: #e9f1ee;
+}
+
+.process-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 35px;
+}
+
+.process-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    border-top: 4px solid #42d392;
+}
+
+.process-card span {
+    color: #42d392;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.process-card h3 {
+    margin: 15px 0 10px;
+}
+
+.process-card p {
+    color: #66736f;
+    font-size: 14px;
+}
+
+
+/* ================================
+   FORM SECTION
+================================ */
+
+.form-section {
+    padding: 80px 8%;
+    background-color: #10201c;
+    color: white;
+}
+
+.form-heading {
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+.form-heading > p:last-child {
+    color: #bdcbc6;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+form {
+    max-width: 1000px;
+
+    background-color: white;
+    color: #17221f;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 35px;
+}
+
+legend {
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+    color: #10201c;
+}
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #cbd6d2;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    background-color: #f9fbfa;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #42d392;
+
+    box-shadow: 0 0 0 2px rgba(66, 211, 146, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ================================
+   RADIO BUTTONS
+================================ */
+
+.radio-group {
+    display: flex;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* ================================
+   CHECKBOXES
+================================ */
+
+.checkbox-group {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.button-container {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+button {
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #15945d;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #0d7045;
+}
+
+.reset-button {
+    background-color: #e5e9e7;
+    color: #17221f;
+}
+
+.reset-button:hover {
+    background-color: #ccd4d0;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #0b1714;
+
+    color: #bdcbc6;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+.footer-logo {
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    color: #42d392;
+}
+
+footer p {
+    margin: 5px;
+}
+
+.copyright {
+    margin-top: 20px !important;
+
+    font-size: 13px;
+    color: #73817c;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .process-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .section,
+    .process-section,
+    .form-section {
+        padding: 60px 5%;
+    }
+
+    .process-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 25px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
